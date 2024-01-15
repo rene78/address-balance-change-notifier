@@ -1,0 +1,14 @@
+{
+  "name": "address-balance-change-notifier",
+  "version": "1.0.0",
+  "description": "Check certain Bitcoin address for balance change",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0"
+  },
+  "devDependencies": {},
+  "main": "src/functions/*.js"
+}
