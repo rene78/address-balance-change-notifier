@@ -2,7 +2,6 @@ const { app } = require('@azure/functions');
 const nodemailer = require("nodemailer");
 
 const BTCADDRESSTOMONITOR = process.env.BTCAddressToMonitor;
-const BTCBASELINEBALANCE = process.env.BTCBaselineBalance;
 
 const EMAILHOST = process.env.eMailHost;
 const EMAILUSERNAME = process.env.eMailUserName;
