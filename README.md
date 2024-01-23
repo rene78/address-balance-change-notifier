@@ -1,8 +1,8 @@
 # Address Balance Change Notifier
-This script monitors the balance of a Bitcoin address every 24 hours and triggers an email notification if the balance has changed in the last 2 days. This Node.js script has been written to work on Microsofts Functions-as-a-Service (FaaS) offering, specifically [Azure Functions Timer Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer). It shouldn't be a lot of work to rewrite it to work on a vanilla Node.js backend though. Just implement a setIntervall() method to call the function at specific time intervalls.
+This script monitors the balance of a Bitcoin address every 24 hours and triggers an email notification if the balance has changed in the last 2 days. This Node.js script has been written to work on Microsofts Functions-as-a-Service (FaaS) offering, specifically [Azure Functions Timer Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer). Rewriting it for a vanilla Node.js backend shouldn't require much effort though. Just implement a ```setIntervall()``` method to call the function at specific time intervalls.
 
 # Configuration Variables
-To customize the functionality, you may adjust the following private variables in a local.settings.json file:
+To customize the functionality, you may adjust the following private variables in a ```local.settings.json``` file:
 
 - **"BTCAddressToMonitor":** Bitcoin address to monitor, e.g. `bc1q3vdf3np392k28hze3zjffk4mk2ka8z9r593jxn`
 - **"eMailHost":** Your email host, e.g. `smtp.office365.com`
@@ -11,7 +11,7 @@ To customize the functionality, you may adjust the following private variables i
 - **"eMailFrom":** Text that appears in the from field of the email, e.g. `'John Doe' <john.doe@outlook.com>`
 - **"eMailTo":** The email address to which the notification mail is sent, e.g. `max.mustermann@gmail.com`
 
-Here is an example of such a local.settings.json file
+Here is an example of such a ```local.settings.json``` file
 
 ```
 {
