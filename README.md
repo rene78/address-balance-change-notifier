@@ -1,5 +1,6 @@
 # Address Balance Change Notifier
 This script monitors the balance of a Bitcoin address every 24 hours and triggers an email notification if the balance has changed in the last 2 days. This Node.js script has been written to work on Microsofts Functions-as-a-Service (FaaS) offering, specifically [Azure Functions Timer Trigger](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-timer). Rewriting it for a vanilla Node.js backend shouldn't require much effort though. Just implement a ```setIntervall()``` method to call the function at specific time intervalls.
+![Intro Pic][screenshot-email]
 
 # Configuration Variables
 To customize the functionality, you may adjust the following private variables in a ```local.settings.json``` file:
@@ -26,3 +27,4 @@ Here is an example of such a ```local.settings.json``` file
   }
 }
 ```
+[screenshot-email]: screenshot.png "Screenshot of email"
